@@ -1,0 +1,61 @@
+﻿DONE? fix tanks getting stuck in walls
+DONE? slower going backwards twice as slow
+DONE? turret rotation - there is a DGS flag for turrent independence
+DONE? Cell recharging
+	- directly choose cell with button
+	- frees up X for battery charge? actually did it so that X cancels current charge
+DONE? Battery Recharge
+	- press X? no
+	- constant but low recharge? Recharges when not connected to other things at half rate
+
+DONE? player selection scene
+	- need to add countdown textures
+	- need to add press A textures/text
+
+arena map files
+
+improve start scene
+	- new background texture with nice graphics and titles
+
+better tank contrast to make turret angle more visible
+	- could try the composite see through shader
+	- could make the tank grey/white with the coloured accents
+
+settings scene
+game modes
+	- finite battery versus infinite battery
+	- most kills in set time versus to the death
+	- area shrinkage over time
+
+ion pulse
+	- scrambles controls
+	- drains power
+
+EMP
+	- Limited Use
+	- needs fully charged battery
+
+Bouncing bullets
+
+Laser sight?
+
+double damage back?
+
+
+destructable environment?
+	- or maybe dynamic gates?
+
+different tank types?
+
+
+
+record new audio sound effect assets
+	- multiple pans clanking
+	- gun fire
+	- bullet collide with wall
+	- character voices for events
+		# hit other player
+		# run out of energy
+		# one more hit until death!
+
+
