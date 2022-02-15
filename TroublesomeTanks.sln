@@ -1,25 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TroublesomeTanks", "TroublesomeTanks\TroublesomeTanks.csproj", "{A7E6027B-85BE-4D75-BCB6-5B8C74D760B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TroublesomeTanks", "TroublesomeTanks\TroublesomeTanks.csproj", "{2D0BC2D0-B711-4F21-921E-52092F2CDE19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A7E6027B-85BE-4D75-BCB6-5B8C74D760B5}.Debug|x86.ActiveCfg = Debug|x86
-		{A7E6027B-85BE-4D75-BCB6-5B8C74D760B5}.Debug|x86.Build.0 = Debug|x86
-		{A7E6027B-85BE-4D75-BCB6-5B8C74D760B5}.Release|x86.ActiveCfg = Release|x86
-		{A7E6027B-85BE-4D75-BCB6-5B8C74D760B5}.Release|x86.Build.0 = Release|x86
+		{2D0BC2D0-B711-4F21-921E-52092F2CDE19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D0BC2D0-B711-4F21-921E-52092F2CDE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D0BC2D0-B711-4F21-921E-52092F2CDE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D0BC2D0-B711-4F21-921E-52092F2CDE19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		VisualSVNWorkingCopyRoot = .
+		SolutionGuid = {B2125759-BB7C-48C2-9D45-5B8673E931E6}
 	EndGlobalSection
 EndGlobal
