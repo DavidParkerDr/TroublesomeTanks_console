@@ -139,6 +139,34 @@ namespace TroublesomeTanks
             mGraphics               = new GraphicsDeviceManager(this);
             Content.RootDirectory   = "Content";
             mSceneManager           = new SceneManager();
+            
+                
+            
+    
+
+
+            mSoundManager = new SoundManager();
+
+            
+        }
+
+        
+
+        /// <summary>
+        /// Allows the game to perform any initialization it needs to before starting to run.
+        /// This is where it can query for any required services and load any non-graphic
+        /// related content.  Calling base.Initialize will enumerate through any components
+        /// and initialize them as well.
+        /// </summary>
+        protected override void Initialize()
+        {
+            // TODO: Add your initialization logic here
+            mGraphics.PreferredBackBufferHeight = DGS.SCREENHEIGHT;
+            mGraphics.PreferredBackBufferWidth = DGS.SCREENWIDTH;
+            mGraphics.IsFullScreen = DGS.IS_FULL_SCREEN;
+            this.Window.Title = "TroubleSome Tanks";
+            mGraphics.ApplyChanges();
+            base.Initialize();
             mControllers = new List<IController>();
             Dictionary<Buttons, Control> buttonMap = new Dictionary<Buttons, Control>();
             buttonMap.Add(Buttons.LeftThumbstickUp, Control.TRACKS_FORWARDS);
@@ -181,18 +209,18 @@ namespace TroublesomeTanks
             keyMap2.Add(Keys.OemSemicolon, Control.POWER3);
 
             GamePadCapabilities capabilities1 = GamePad.GetCapabilities(PlayerIndex.One);
+            GamePadCapabilities capabilities2 = GamePad.GetCapabilities(PlayerIndex.Two);
+            GamePadCapabilities capabilities3 = GamePad.GetCapabilities(PlayerIndex.Three);
+            GamePadCapabilities capabilities4 = GamePad.GetCapabilities(PlayerIndex.Four);
             if (capabilities1.IsConnected)
             {
                 mControllers.Add(new XBoxController(buttonMap, PlayerIndex.One));
-                GamePadCapabilities capabilities2 = GamePad.GetCapabilities(PlayerIndex.Two);
                 if (capabilities2.IsConnected)
                 {
                     mControllers.Add(new XBoxController(buttonMap, PlayerIndex.Two));
-                    GamePadCapabilities capabilities3 = GamePad.GetCapabilities(PlayerIndex.Three);
                     if (capabilities3.IsConnected)
                     {
                         mControllers.Add(new XBoxController(buttonMap, PlayerIndex.Three));
-                        GamePadCapabilities capabilities4 = GamePad.GetCapabilities(PlayerIndex.Four);
                         if (capabilities4.IsConnected)
                         {
                             mControllers.Add(new XBoxController(buttonMap, PlayerIndex.Four));
@@ -219,32 +247,6 @@ namespace TroublesomeTanks
                 mControllers.Add(new KeyboardController(keyMap1));
                 mControllers.Add(new KeyboardController(keyMap2));
             }
-                
-            
-    
-
-
-            mSoundManager = new SoundManager();
-
-            mGraphics.PreferredBackBufferHeight = DGS.SCREENHEIGHT;
-            mGraphics.PreferredBackBufferWidth = DGS.SCREENWIDTH;
-            mGraphics.IsFullScreen = DGS.IS_FULL_SCREEN;
-            this.Window.Title = "TroubleSome Tanks";
-        }
-
-        
-
-        /// <summary>
-        /// Allows the game to perform any initialization it needs to before starting to run.
-        /// This is where it can query for any required services and load any non-graphic
-        /// related content.  Calling base.Initialize will enumerate through any components
-        /// and initialize them as well.
-        /// </summary>
-        protected override void Initialize()
-        {
-            // TODO: Add your initialization logic here
-
-            base.Initialize();
         }
 
         /// <summary>
